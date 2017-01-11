@@ -1,5 +1,6 @@
 package opta.optaprj;
 
+
 @org.optaplanner.core.api.domain.entity.PlanningEntity
 public class Process implements java.io.Serializable
 {
@@ -14,7 +15,7 @@ public class Process implements java.io.Serializable
    private int requiredNetworkBandwidth;
    @org.kie.api.definition.type.Label(value = "Computer")
    @org.optaplanner.core.api.domain.variable.PlanningVariable(valueRangeProviderRefs = { "computerRange" })
-   private opta.optacloud.Computer computer;
+   private opta.optaprj.Computer computer;
 
    public Process()
    {
@@ -50,18 +51,18 @@ public class Process implements java.io.Serializable
       this.requiredNetworkBandwidth = requiredNetworkBandwidth;
    }
 
-   public opta.optacloud.Computer getComputer()
+   public opta.optaprj.Computer getComputer()
    {
       return this.computer;
    }
 
-   public void setComputer(opta.optacloud.Computer computer)
+   public void setComputer(opta.optaprj.Computer computer)
    {
       this.computer = computer;
    }
 
    public Process(int requiredCpuPower, int requiredMemory,
-         int requiredNetworkBandwidth, opta.optacloud.Computer computer)
+         int requiredNetworkBandwidth, opta.optaprj.Computer computer)
    {
       this.requiredCpuPower = requiredCpuPower;
       this.requiredMemory = requiredMemory;

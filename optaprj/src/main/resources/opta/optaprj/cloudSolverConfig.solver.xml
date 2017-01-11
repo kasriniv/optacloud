@@ -1,5 +1,12 @@
 <solver xStreamId="1">
   <scanAnnotatedClasses xStreamId="2"/>
-  <scoreDirectorFactory xStreamId="3"/>
-  <termination xStreamId="4"/>
+  <scoreDirectorFactory xStreamId="3">
+    <scoreDefinitionType>HARD_SOFT</scoreDefinitionType>
+  </scoreDirectorFactory>
+  <termination xStreamId="4">
+    <secondsSpentLimit>30</secondsSpentLimit>
+    <minutesSpentLimit>0</minutesSpentLimit>
+    <hoursSpentLimit>0</hoursSpentLimit>
+    <daysSpentLimit>0</daysSpentLimit>
+  </termination>
 </solver>

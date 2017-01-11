@@ -15,39 +15,39 @@ public class CloudSolution extends AbstractSolution<HardSoftScore> implements ja
 
    @org.kie.api.definition.type.Label(value = "Computer list")
    @org.optaplanner.core.api.domain.valuerange.ValueRangeProvider(id = "computerRange")
-   private java.util.List<opta.optacloud.Computer> computerList;
+   private java.util.List<opta.optaprj.Computer> computerList;
    @org.kie.api.definition.type.Label(value = "Process list")
    @org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
-   private java.util.List<opta.optacloud.Process> processList;
+   private java.util.List<opta.optaprj.Process> processList;
 
    public CloudSolution()
    {
    }
 
-   public java.util.List<opta.optacloud.Computer> getComputerList()
+   public java.util.List<opta.optaprj.Computer> getComputerList()
    {
       return this.computerList;
    }
 
    public void setComputerList(
-         java.util.List<opta.optacloud.Computer> computerList)
+         java.util.List<opta.optaprj.Computer> computerList)
    {
       this.computerList = computerList;
    }
 
-   public java.util.List<opta.optacloud.Process> getProcessList()
+   public java.util.List<opta.optaprj.Process> getProcessList()
    {
       return this.processList;
    }
 
    public void setProcessList(
-         java.util.List<opta.optacloud.Process> processList)
+         java.util.List<opta.optaprj.Process> processList)
    {
       this.processList = processList;
    }
 
-   public CloudSolution(java.util.List<opta.optacloud.Computer> computerList,
-         java.util.List<opta.optacloud.Process> processList)
+   public CloudSolution(java.util.List<opta.optaprj.Computer> computerList,
+         java.util.List<opta.optaprj.Process> processList)
    {
       this.computerList = computerList;
       this.processList = processList;
